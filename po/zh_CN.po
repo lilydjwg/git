@@ -6949,7 +6949,7 @@ msgstr "这个命令拒绝元素 %%(%.*s)"
 #: ref-filter.c:1040
 #, c-format
 msgid "--format=%.*s cannot be used with--python, --shell, --tcl"
-msgstr "--format=%.*s 不能和 --python、-shell、--tcl 同时使用"
+msgstr "--format=%.*s 不能和 --python、--shell、--tcl 同时使用"
 
 #: ref-filter.c:1706
 #, c-format
@@ -11217,7 +11217,7 @@ msgstr "正在执行 %s\n"
 #: builtin/bisect--helper.c:1120
 #, c-format
 msgid "bisect run failed: exit code %d from '%s' is < 0 or >= 128"
-msgstr "二分查找运行失败：命令 '%2$s' 的退出码 %1$d 小于 0 或大于等于 128"
+msgstr "二分查找运行失败：命令 '%2$s' 的退出码 %1$d < 0 或 >= 128"
 
 #: builtin/bisect--helper.c:1136
 #, c-format
@@ -11287,7 +11287,7 @@ msgstr "可视化二分查找过程"
 
 #: builtin/bisect--helper.c:1212
 msgid "use <cmd>... to automatically bisect."
-msgstr "使用 <cmd>... 来自动二分查找。"
+msgstr "使用 <命令>... 来自动二分查找。"
 
 #: builtin/bisect--helper.c:1214
 msgid "no log for BISECT_WRITE"
@@ -19395,7 +19395,7 @@ msgstr "无法快进到多个分支。"
 
 #: builtin/pull.c:1082
 msgid "Need to specify how to reconcile divergent branches."
-msgstr "需要指定如何调和偏移的分支。"
+msgstr "需要指定如何调和偏离的分支。"
 
 #: builtin/pull.c:1096
 msgid "cannot rebase with locally recorded submodule modifications"
@@ -19743,8 +19743,8 @@ msgid ""
 "ish1> [<tree-ish2> [<tree-ish3>]])"
 msgstr ""
 "git read-tree [(-m [--trivial] [--aggressive] | --reset | --prefix=<前缀>) [-"
-"u | -i]] [--no-sparse-checkout] [--index-output=<文件>] (--empty | <树对象1> "
-"[<树对象2> [<树对象3>]])"
+"u | -i]] [--no-sparse-checkout] [--index-output=<文件>] (--empty | <树对象一> "
+"[<树对象二> [<树对象三>]])"
 
 #: builtin/read-tree.c:116
 msgid "write resulting index to <file>"
@@ -22920,7 +22920,7 @@ msgstr "子模块头指针的 SHA1"
 
 #: builtin/submodule--helper.c:2591
 msgid "git submodule--helper run-update-procedure [<options>] <path>"
-msgstr "git submodule--helper run-update-procedure [<选项>] [<路径>]"
+msgstr "git submodule--helper run-update-procedure [<选项>] <路径>"
 
 #: builtin/submodule--helper.c:2662
 #, c-format
@@ -24308,7 +24308,7 @@ msgstr "'%s' 鉴权失败"
 #: remote-curl.c:504
 #, c-format
 msgid "unable to access '%s' with http.pinnedPubkey configuration: %s"
-msgstr "无法以 http.pinnedPubkey 设置访问 '%s'： %s"
+msgstr "无法以 http.pinnedPubkey 设置访问 '%s'：%s"
 
 #: remote-curl.c:508
 #, c-format
