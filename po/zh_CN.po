@@ -2599,7 +2599,7 @@ msgstr "无法从后台中恢复，请使用 'fg' 来恢复"
 
 #: compat/terminal.c:168
 msgid "cannot restore terminal settings"
-msgstr "无法存储终端设置"
+msgstr "无法恢复终端设置"
 
 #: config.c:143
 #, c-format
@@ -2634,8 +2634,8 @@ msgid ""
 "remote URLs cannot be configured in file directly or indirectly included by "
 "includeIf.hasconfig:remote.*.url"
 msgstr ""
-"无法使用文件直接配置远程 URL，或者用 includeIf.hasconfig:remote.*.url 来间接"
-"包含。"
+"远程 URL 不能在文件中配置，不管直接地还是通过 includeIf.hasconfig:remote.*.url 间接"
+"包含地。"
 
 #: config.c:508
 #, c-format
@@ -2821,7 +2821,7 @@ msgstr "core.commentChar 应该是一个字符"
 #: config.c:1692
 #, c-format
 msgid "ignoring unknown core.fsyncMethod value '%s'"
-msgstr "忽略位置的 core.fsyncMethod 值 '%s'"
+msgstr "忽略未知的 core.fsyncMethod 值 '%s'"
 
 #: config.c:1698
 msgid "core.fsyncObjectFiles is deprecated; use core.fsync instead"
@@ -4428,7 +4428,7 @@ msgstr "fsmonitor_ipc__send_query: 未知错误于 '%s'"
 
 #: fsmonitor-ipc.c:155
 msgid "fsmonitor--daemon is not running"
-msgstr "fsmonitor--daemon 不在运行中"
+msgstr "fsmonitor--daemon 没有运行"
 
 #: fsmonitor-ipc.c:164
 #, c-format
@@ -4631,7 +4631,7 @@ msgstr "命令别名"
 
 #: help.c:486
 msgid "See 'git help <command>' to read about a specific subcommand"
-msgstr "执行　'git help <command>' 来查看特定子命令"
+msgstr "执行　'git help <command>' 来了解特定子命令"
 
 #: help.c:563
 #, c-format
@@ -6118,7 +6118,7 @@ msgstr "不能在工作区之外使用相对路径语法"
 #: object-name.c:1901
 #, c-format
 msgid "<object>:<path> required, only <object> '%s' given"
-msgstr "需要 <对象>:<路径>，只给出了 <对象> '%s‘"
+msgstr "需要 <对象>:<路径>，只给出了 <对象> '%s'"
 
 #: object-name.c:2014
 #, c-format
@@ -12397,7 +12397,7 @@ msgstr "数据对象|树"
 
 #: builtin/cat-file.c:876
 msgid "use a <path> for (--textconv | --filters); Not with 'batch'"
-msgstr "(--textconv | --filters)使用 <路径>；而不是 'batch'"
+msgstr "(--textconv | --filters) 使用 <路径>；而不是 'batch'"
 
 #: builtin/cat-file.c:894
 #, c-format
@@ -13629,7 +13629,7 @@ msgstr "--local 被忽略"
 
 #: builtin/clone.c:1185
 msgid "cannot clone from filtered bundle"
-msgstr "无法从过滤的归档包克隆"
+msgstr "无法从经过过滤的归档包克隆"
 
 #: builtin/clone.c:1265 builtin/clone.c:1324
 msgid "remote transport reported error"
@@ -16013,7 +16013,7 @@ msgstr "'%s' 的值超出范围：%d"
 #: builtin/fsmonitor--daemon.c:57
 #, c-format
 msgid "value of '%s' not bool or int: %d"
-msgstr "'%s' 的值不是 bool 或int：%d"
+msgstr "'%s' 的值不是 bool 或 int：%d"
 
 #: builtin/fsmonitor--daemon.c:99
 #, c-format
@@ -16865,7 +16865,7 @@ msgstr "包太大超过了当前 off_t 的定义"
 #: builtin/index-pack.c:329
 #, c-format
 msgid "pack exceeds maximum allowed size (%s)"
-msgstr "包超过了最大允许值（%s）"
+msgstr "包超过了最大允许大小（%s）"
 
 #: builtin/index-pack.c:362
 msgid "pack signature mismatch"
@@ -18692,7 +18692,7 @@ msgstr "列出可以从所有引用访问的提交"
 
 #: builtin/name-rev.c:591
 msgid "deprecated: use annotate-stdin instead"
-msgstr "已启用：取而代之使用 annotate-stdin"
+msgstr "已弃用：取而代之使用 annotate-stdin"
 
 #: builtin/name-rev.c:592
 msgid "annotate text from stdin"
@@ -20688,7 +20688,7 @@ msgstr "给 '--%2$s' 的时间戳 '%1$s' 无效"
 
 #: builtin/reflog.c:240 builtin/reflog.c:359
 msgid "do not actually prune any entries"
-msgstr "实际上不要清除任何条目"
+msgstr "不要实际清除任何条目"
 
 #: builtin/reflog.c:243 builtin/reflog.c:362
 msgid ""
@@ -21801,7 +21801,7 @@ msgstr "重置后取消暂存的变更："
 msgid ""
 "It took %.2f seconds to refresh the index after reset.  You can use\n"
 "'--no-refresh' to avoid this."
-msgstr "花了 %.2f 秒才在重置后刷新索引。为避免，您可以使用 '--no-refresh'。"
+msgstr "在重置后花了 %.2f 秒来刷新索引。使用 '--no-refresh' 以避免之。"
 
 #: builtin/reset.c:547
 #, c-format
@@ -22424,14 +22424,14 @@ msgstr "指定目录而不是模式（无前导斜线）"
 msgid ""
 "specify directories rather than patterns.  If your directory starts with a "
 "'!', pass --skip-checks"
-msgstr "指定目录而不是模式。若果你的目录以 '!' 开头，传入 --skip-checks"
+msgstr "指定目录而不是模式。若你的目录以 '!' 开头，传入 --skip-checks"
 
 #: builtin/sparse-checkout.c:716
 msgid ""
 "specify directories rather than patterns.  If your directory really has any "
 "of '*?[]\\' in it, pass --skip-checks"
 msgstr ""
-"指定目录而不是模式。若果你的目录真的包括 '*?[]\\' 在内，传入 --skip-checks"
+"指定目录而不是模式。若你的目录真的包含 '*?[]\\' 中的字符，传入 --skip-checks"
 
 #: builtin/sparse-checkout.c:732
 #, c-format
@@ -22439,7 +22439,7 @@ msgid ""
 "'%s' is not a directory; to treat it as a directory anyway, rerun with --"
 "skip-checks"
 msgstr ""
-"'%s' 不是目录；如果无论如何都要将它当作目录，使用 --skip-checks 重新运行"
+"'%s' 不是目录；若无论如何都要将它当作目录，使用 --skip-checks 重新运行"
 
 #: builtin/sparse-checkout.c:734
 #, c-format
@@ -23714,7 +23714,7 @@ msgstr "已更新标签 '%s'（曾为 %s）\n"
 
 #: builtin/unpack-objects.c:95
 msgid "pack exceeds maximum allowed size"
-msgstr "包超过了最大允许值"
+msgstr "包超过了最大允许大小"
 
 #: builtin/unpack-objects.c:504
 msgid "Unpacking objects"
